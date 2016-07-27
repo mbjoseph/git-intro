@@ -1,5 +1,6 @@
 ---
-title: "Version control with git and GitHub for scientists"
+title: "Version control with git for scientists"
+subtitle: https://github.com/mbjoseph/git-intro
 author: "Max Joseph"
 date: "July 27, 2016"
 output:
@@ -10,15 +11,13 @@ header-includes:
 - \usepackage{graphicx}
 - \beamertemplatenavigationsymbolsempty
 - \usefonttheme{professionalfonts}
-- \usefonttheme{serif}
-- \usepackage{fontspec}
+- \renewcommand{\familydefault}{\sfdefault}
 - \usepackage{xcolor}
-- \setmainfont{Helvetica}
 - \definecolor{foreground}{RGB}{0,0,0}
 - \definecolor{background}{RGB}{255,255,255}
 - \definecolor{title}{RGB}{0,120,255}
 - \definecolor{gray}{RGB}{155,155,155}
-- \definecolor{subtitle}{RGB}{102,255,204}
+- \definecolor{subtitle}{RGB}{204,0,0}
 - \definecolor{hilight}{RGB}{102,255,204}
 - \definecolor{vhilight}{RGB}{255,111,207}
 - \setbeamercolor{titlelike}{fg=title}
@@ -161,9 +160,14 @@ Once you're sure that you're changes are worth saving
 git commit -m 'changed x, y, and z'
 ```
 
+
 ## Commit messages
 
-Describe why 
+- Describe why and the what "in a nutshell"
+- Note to your future self (and to anyone else who you're collaborating with)
+
+![](http://imgs.xkcd.com/comics/git_commit.png)
+
 
 ## What did we do?
 
@@ -210,6 +214,13 @@ git checkout HEAD your_file.R
 (Image from Software Carpentry)
 
 
+## What if you really screw up?
+
+__A git choose your own adventure__
+
+http://sethrobertson.github.io/GitFixUm/fixup.html
+
+
 ## Remote repositories
 
 1. Create repository on Github, GitLab, or Bitbucket
@@ -249,7 +260,7 @@ Check it out from your remote git repository using ssh or html
 (ssh is better, html may require additional config w/ RStudio)
 
 
-## Demo of reverting, adding, committing, pushing
+## Demo of adding, committing, pushing
 
 
 ## Github vs. GitLab vs. Bitbucket
@@ -257,23 +268,19 @@ Check it out from your remote git repository using ssh or html
 Private repos:
 
 - free on Bitbucket (w/ < 6 collaborators)
+- free on GitLab (unlimited collaborators)
 - not free on Github
 
 
 ## Github vs. GitLab vs. Bitbucket
 
-Popularity & user base (4 vs. 1 million)
+- all very similar
+- Popularity & user base (4 vs. ?? vs. 1 million)
+- free vs. pay
+- open source vs. closed source
 
-Support 
+**You can use all three if you want!**
 
-
-## Bottom line
-
-You can use both if you want
-
-Bitbucket wins w/ private repos
-
-Github wins for open projects & big collaborations
 
 
 ## Continuing education & advanced stuff
