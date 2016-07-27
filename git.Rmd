@@ -29,7 +29,8 @@ header-includes:
 ---
 
 ```{r global_options, include=FALSE}
-knitr::opts_chunk$set(fig.width=6, fig.height=5.5, fig.align='center', warning=FALSE, message=FALSE)
+knitr::opts_chunk$set(fig.width=6, fig.height=5.5, fig.align='center', 
+                      warning=FALSE, message=FALSE)
 ```
 
 
@@ -63,6 +64,8 @@ Version control system
 - backup
 - reproducibility
 - collaboration
+- organization
+- transparency
 
 
 ## What you get
@@ -238,7 +241,11 @@ __Setting up a "remote"__
 git remote add origin https://www.github.com/user/test.git
 ```
 
-How to check: `git remote -v`
+__How to check:__ 
+
+```
+git remote -v
+```
 
 ## Once your repository has been linked to remote
 
@@ -290,8 +297,20 @@ Private repos:
 
 
 
-## Continuing education & advanced stuff
+## Continuing education & additional resources
 
-Pro Git
+**Motivation**
 
-![](fig/ss.png)
+- [Ram K. 2013. Git can facilitate greater reproducibility and increased transparency in science.](https://scfbm.biomedcentral.com/articles/10.1186/1751-0473-8-7)
+
+**Instruction**
+
+- [Pro Git](https://progit.org/)
+- [Software carpentry](http://swcarpentry.github.io/git-novice/)
+- [Git for scientists](http://nyuccl.org/pages/gittutorial/)
+
+**Alternative interfaces**
+
+- [GUIs for the command line averse](https://git-scm.com/book/en/v2/Git-in-Other-Environments-Graphical-Interfaces)
+
+![](https://assets-cdn.github.com/images/modules/logos_page/Octocat.png)
