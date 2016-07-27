@@ -29,13 +29,17 @@ header-includes:
 ---
 
 ```{r global_options, include=FALSE}
-knitr::opts_chunk$set(fig.width=6, fig.height=5.5, fig.align='center', echo=FALSE, warning=FALSE, message=FALSE)
+knitr::opts_chunk$set(fig.width=6, fig.height=5.5, fig.align='center', warning=FALSE, message=FALSE)
 ```
 
 
 ## Discuss
 
 What is your current version control system?
+
+1. How do you manage different file versions?
+2. How do you work with collaborators on the same files?
+3. How much would your science suffer if your workstation exploded right now? (scale from 1-10)
 
 
 ## What is git
@@ -96,8 +100,8 @@ save(x, file = "x.RData")
 
 Prerequisites:
 
-- git installed
-- git configured
+- git installed (check with `which git`)
+- git configured (check with `git config --list`)
 
 ```
 git config --global user.name "Vlad Dracula"
@@ -137,7 +141,7 @@ git add --all
 
 ## Your changes are now staged
 
-![](git.png)
+![](fig/git.png)
 
 (Image from Software Carpentry)
 
@@ -202,14 +206,14 @@ git checkout HEAD your_file.R
 
 ## What happened?
 
-![](git.png)  
+![](fig/git.png)  
 
 (Image from Software Carpentry)
 
 
 ## Wait, what does HEAD refer to?
 
-![Commits $\approx$ a stack of heads](git_staging.pdf)
+![Commits $\approx$ a stack of heads](fig/git_staging.pdf)
 
 (Image from Software Carpentry)
 
@@ -221,9 +225,11 @@ __A git choose your own adventure__
 http://sethrobertson.github.io/GitFixUm/fixup.html
 
 
-## Remote repositories
+## Mirroring your repository on the internet
 
-1. Create repository on Github, GitLab, or Bitbucket
+__Setting up a "remote"__
+
+1. Create repository on Githubwith no .gitignore, no README, and no license
 
 2. Add that as a remote
 
@@ -232,6 +238,7 @@ http://sethrobertson.github.io/GitFixUm/fixup.html
 git remote add origin https://www.github.com/user/test.git
 ```
 
+How to check: `git remote -v`
 
 ## Once your repository has been linked to remote
 
@@ -246,7 +253,7 @@ Check the remote (Github or  Bitbucket) to see new changes
 
 ## Overview
 
-![](git.png)  
+![](fig/git.png)  
 
 (Image from Software Carpentry)
 
@@ -287,4 +294,4 @@ Private repos:
 
 Pro Git
 
-![](ss.png)
+![](fig/ss.png)
